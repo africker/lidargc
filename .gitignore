@@ -1,0 +1,10 @@
+# OS Files
+.DS_Store
+.Trashes
+.Spotlight*
+
+# Folders
+input
+output
+ignore
+
