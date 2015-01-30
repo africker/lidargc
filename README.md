@@ -3,9 +3,9 @@ README
 
 General
 -------
-A set of programs to process LiDAR data stored as *.LAS files into new *.LAS files containing to produce a digital elevation model, digital surface model, and digital canopy height model by rasterizing.
+A set of programs to process LiDAR data stored as *.LAS files into new *.LAS files for digital elevation model, digital surface model, and digital canopy height model production. 
 
-Currently, the steps involve 1) creating an SQLite3 database with point data from *.LAS files using the createDB.py command and 2) running either or both the ground classifier andcanopy surface classifier with the classify.py command.
+Currently, the steps involve 1) creating an SQLite3 database with point data from *.LAS files using the `createDB.py` command and 2) running either or both the ground classifier and canopy surface classifier with the `classify.py` command.
 
 Ground Point Classification
 -------
