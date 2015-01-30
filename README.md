@@ -17,7 +17,10 @@ Data are processed with 1 m x 1 m kernels. The highest first return point in a 1
 
 Dependencies
 -------
+##### Non-standard Python libraries
 <a href="http://www.numpy.org/">numpy</a>, <a href="https://github.com/grantbrown/laspy">laspy</a>
+
+<a href="http://www.sqlite.org/">SQLite3</a>
 
 Notes
 -------
@@ -26,6 +29,8 @@ Expect needing at least 20x the space taken up by the input LAS files for the da
 This program was tested on computer with x86-64 archtecture and 64 GB of RAM running Mac OS X. The hard drive is formated as Mac OS Extended.
 
 Points from above the canopy (e.g. birds, clouds) are filtered by specifying a threshold for the maximum height from the ground. The distance from the ground is approximated by the lowest point in the 10 m x 10 m kernel containing the 1 m x 1 m kernel. 
+
+SQLite3 is installed on many operating systems by default. 
 
 References
 ------- 
