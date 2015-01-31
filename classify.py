@@ -234,7 +234,7 @@ def canopyClassifier(configs):
 			Z = result[2]
 			heights[Z]=result
 		if len(heights)>0:
-			TOC = height[max(heights.keys())]
+			TOC = heights[max(heights)]
 			TOC = setCanopy(TOC)
 			points.append((TOC,))
 			count += 1
