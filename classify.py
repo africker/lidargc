@@ -238,7 +238,7 @@ def canopyClassifier(configs):
 			TOC = setCanopy(TOC)
 			points.append((TOC,))
 			count += 1
-			print "Finished {}; block hash {}.".format(count, h)
+			print "Finished {}; block hash {}.".format(count, h1)
 	conn.close()
 	t_f = time.time()
 	print "Canopy classifier took {} minutes.".format((t_f-t_i)/60.0)
