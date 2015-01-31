@@ -20,7 +20,8 @@ Dependencies
 ##### Non-standard Python libraries
 <a href="http://www.numpy.org/">numpy</a>, <a href="https://github.com/grantbrown/laspy">laspy</a>
 
-<a href="http://www.sqlite.org/">SQLite3</a>
+##### SQLite3 
+<a href="http://www.sqlite.org/">http://www.sqlite.org/</a>
 
 Notes
 -------
