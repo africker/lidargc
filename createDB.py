@@ -158,6 +158,7 @@ def add_data(infile, configs):
 	c.executemany('INSERT INTO pointcloud VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', data)
 	conn.commit()
 	indata.close()
+	conn.close()
 	t_f = time.time()
 	print "Time for {} with {} records took {} minutes.".format(
 		filename,
