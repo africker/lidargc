@@ -101,7 +101,7 @@ def indexDB(configs):
 	c.execute('CREATE INDEX hash10index ON pointcloud(hash10)')
 	c.execute('CREATE INDEX hash5index ON pointcloud(hash5)')
 	c.execute('CREATE INDEX hash1index ON pointcloud(hash1)')
-	c.execute('CREATE INDEX zindex ONE pointcloud(Z)')
+	c.execute('CREATE INDEX zindex ON pointcloud(Z)')
 	conn.close()
 
 def files(configs):
