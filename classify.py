@@ -227,7 +227,7 @@ def canopyClassifier(configs):
 				pt_src_id,
 				gps_time
 			FROM pointcloud
-			WHERE Z<z_max and hash1=?;
+			WHERE Z<? and hash1=?;
 			""", (z_max, h1)).fetchall()
 		heights={}
 		for result in results:
