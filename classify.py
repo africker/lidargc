@@ -198,9 +198,8 @@ def canopyClassifier(configs):
 	hashmap = {}
 	for k,v in hashmap_list:
 		hashmap[k]=v
-
+	
 	minZ_list = c.execute("""SELECT distinct(hash10), min(Z) FROM pointcloud
-							where num_returns=return_number
 							GROUP BY hash10"""
 	).fetchall()
 	min_z = {}
@@ -259,12 +258,14 @@ def main():
 		groundPoints = Points(points, configs, "ground.las")
 		groundPoints.getParams()
 		groundPoints.write()
+		del points
 	if args.toc:
 		points = canopyClassifier(configs)
 		print points
 		canopyPoints = Points(points, configs, "canopy.las")
 		canopyPoints.getParams()
 		canopyPoints.write()
+		del points
 	t_f = time.time()
 	if args.verbose:
 		print "Total elapsed time {} minutes.".format((t_f-t_i)/60)
